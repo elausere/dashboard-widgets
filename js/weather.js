@@ -24,7 +24,7 @@ fetch(url)
     <h1>Weather</h1>
     <data value="${data.name}" class="city">${data.name}</data>
     <data value="${data.main.temp}" class="temp">${data.main.temp}&#8457;</data>
-    <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Placeholder">
+    <img src="weather_icons/animated/cloudy-day-1.svg" alt="Placeholder">
   `;
   
   // Insert dynamic template to container
