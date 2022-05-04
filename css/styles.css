@@ -94,15 +94,19 @@ button {
 
 
 .hours {
+  size: 100%;
 }
 
 .minutes {
+  size: 100%;
 }
 
 .seconds {
+  size: 100%;
 }
 
 .amOrPM {
+  size: 100%;
   
 }
 
@@ -115,15 +119,18 @@ button {
 }
 
 .month {
+  size: 100%;
 }
 
 .dayOfMonth {
-}
+  size: 100%;}
 
 .year {
+  size: 100%;
 }
 
 .dayOfWeek {
+  size: 100%;
 }
 
 /* Weather */
@@ -147,12 +154,11 @@ button {
 }
 
 .temp {
-  
+  size: 100%;
 }
 
-
 .weather img {
-  
+  padding: 1px;
 }
 
 
