@@ -3,7 +3,7 @@ const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
-/*SUBSCRIBE HERE FOR API KEY: https://home.openweathermap.org/users/sign_up*/
+
 const apiKey = "925e70d7728a3441c1361eb78aa51c52";
 
 form.addEventListener("submit", e => {
@@ -38,22 +38,7 @@ form.addEventListener("submit", e => {
     weatherContainer.insertAdjacentHTML("afterbegin", template);
     })
 
-    const li = document.createElement("li");
-    li.classList.add("city");
-    const markup = `
-      <h2 class="city-name" data-name="${name},${sys.country}">
-        <span>${data.name}</span>
-      </h2>
-      <div class="city-temp">${Math.round(main.temp)}<sup>°F</sup></div>
-      <figure>
-        <img class="city-icon" src="${icon}" alt="${
-      weather[0]["description"]
-    }">
-        <figcaption>${weather[0]["description"]}</figcaption>
-      </figure>
-    `;
-    li.innerHTML = markup;
-    list.appendChild(li);
+    
 
 
   msg.textContent = "";
