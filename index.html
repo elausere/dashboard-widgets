@@ -39,10 +39,22 @@
     <script defer src="js/weather.js"></script>
   </head>
   <body>
+
+    <section class="top-banner">
+      <div class="container">
+        <h1 class="heading">Weather Widgets</h1>
+        <form>
+          <input type="text" placeholder="Search for a city" autofocus>
+          <button type="submit">SUBMIT</button>
+          <span class="msg"></span>
+        </form>
+      </div>
+    </section>
+
     <main class="layout">
       <!-- Time -->
       <section class="time">
-        <h1>Time</h1>
+        
         <time>
           <data class="hours">HH</data> : <data class="minutes">MM</data> :
           <data class="seconds">SS</data>
@@ -52,40 +64,29 @@
 
       <!--  Date -->
       <section class="date">
-        <h1>Date</h1>
+        
         <time>
           <data class="month">Month</data>
           <data class="dayOfMonth">00</data>, <data class="year">0000</data> -
           <data class="dayOfWeek">SMTWTFS</data>
         </time>
       </section>
-
-      <section class="ajax-section">
-        <div class="container">
-          <ul class="cities"></ul>
-        </div>
-      </section>
-
-      <!-- Weather -->
-      <section class="weather">
-<!--         
-      <h1>Weather</h1>
-      <data value="" class="city">City</data>
-      <data value="" class="temp">Temp</data>
-      <img src="weather_icons/animated/cloudy-day-1.svg" alt="Placeholder"> -->
-     
-      </section>
     
     </main>
-    <section class="top-banner">
-      <div class="container">
-        <h1 class="heading">Simple Weather App</h1>
-        <form>
-          <input type="text" placeholder="Search for a city" autofocus>
-          <button type="submit">SUBMIT</button>
-          <span class="msg"></span>
-        </form>
+
+    <!-- Weather -->
+    <section class="weather">
+
+      <div class="weatherContainer">
+        <ul class="cities"></ul>
       </div>
+<!--         
+    <h1>Weather</h1>
+    <data value="" class="city">City</data>
+    <data value="" class="temp">Temp</data>
+    <img src="weather_icons/animated/cloudy-day-1.svg" alt="Placeholder"> -->
+   
     </section>
+
   </body>
 </html>

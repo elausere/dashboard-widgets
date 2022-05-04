@@ -24,20 +24,36 @@ form.addEventListener("submit", e => {
     
     // Get Container for Weather   
     const weatherContainer = document.querySelector('.weather');
-
     
     // Template to output
     const template = `
-      <h1>Weather</h1>
       <data value="${data.name}" class="city">${data.name}</data>
       <data value="${data.main.temp}" class="temp">${data.main.temp}&#8457;</data>
-      <data value="${data.weather[0].description}"class="desc">${data.weather[0].description}</data>
       <img src="weather_icons/animated/cloudy-day-1.svg" alt="Placeholder">
+      <data value="${data.weather[0].description}"class="desc">${data.weather[0].description}</data>
+
     `;
     
     // Insert dynamic template to container
     weatherContainer.insertAdjacentHTML("afterbegin", template);
     })
+
+    const li = document.createElement("li");
+    li.classList.add("city");
+    const markup = `
+      <h2 class="city-name" data-name="${name},${sys.country}">
+        <span>${data.name}</span>
+      </h2>
+      <div class="city-temp">${Math.round(main.temp)}<sup>°F</sup></div>
+      <figure>
+        <img class="city-icon" src="${icon}" alt="${
+      weather[0]["description"]
+    }">
+        <figcaption>${weather[0]["description"]}</figcaption>
+      </figure>
+    `;
+    li.innerHTML = markup;
+    list.appendChild(li);
 
 
   msg.textContent = "";
