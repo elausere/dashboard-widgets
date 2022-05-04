@@ -1,5 +1,5 @@
 // API key. Replace with your API key
-const APIKEY = 'f2f85762267ef18d0df71e18ec9f3737';
+const APIKEY = '925e70d7728a3441c1361eb78aa51c52';
 // City
 const city = 'Spokane';
 // Units for Farenheit
@@ -24,6 +24,7 @@ fetch(url)
     <h1>Weather</h1>
     <data value="${data.name}" class="city">${data.name}</data>
     <data value="${data.main.temp}" class="temp">${data.main.temp}&#8457;</data>
+    <data value="${data.weather.icon}" class="description">${data.weather.icon}</data>
     <img src="weather_icons/animated/cloudy-day-1.svg" alt="Placeholder">
   `;
   
