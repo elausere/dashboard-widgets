@@ -39,16 +39,6 @@
     <script defer src="js/weather.js"></script>
   </head>
   <body>
-    <section class="top-banner">
-      <div class="container">
-        <h1 class="heading">Simple Weather App</h1>
-        <form>
-          <input type="text" placeholder="Search for a city" autofocus>
-          <button type="submit">SUBMIT</button>
-          <span class="msg"></span>
-        </form>
-      </div>
-    </section>
     <main class="layout">
       <!-- Time -->
       <section class="time">
@@ -70,6 +60,12 @@
         </time>
       </section>
 
+      <section class="ajax-section">
+        <div class="container">
+          <ul class="cities"></ul>
+        </div>
+      </section>
+
       <!-- Weather -->
       <section class="weather">
 <!--         
@@ -79,6 +75,17 @@
       <img src="weather_icons/animated/cloudy-day-1.svg" alt="Placeholder"> -->
      
       </section>
+    
     </main>
+    <section class="top-banner">
+      <div class="container">
+        <h1 class="heading">Simple Weather App</h1>
+        <form>
+          <input type="text" placeholder="Search for a city" autofocus>
+          <button type="submit">SUBMIT</button>
+          <span class="msg"></span>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

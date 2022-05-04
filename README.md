@@ -16,4 +16,7 @@ The concept of a Dashboard appears nearly everywhere. Most obvious are car dashb
 * Apply concepts from Web Design 1 and 2 with APIs from Web 3
 
 ## Citations
-List your sources here
+Weather API - openweathermap.org
+Javascript Code for allowing User Input - https://codepen.io/tutsplus/pen/gObLaEP
+Weather Icon API - https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/
+Weather Icons from amcharts - (https://www.amcharts.com/)
